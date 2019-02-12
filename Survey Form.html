@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="Style_Form.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
+</head>
+
+<body>
+    <div id="main">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Let us know how much you like muscle cars.</p>
+        <form id="survey-form">
+            <div id="div_name">
+
+
+                <label class="label_class" id="name-label" for="name">*Name:</label>
+                <input class="input_text" id="name" type="text" placeholder="Enter your name" required>
+                <br>
+
+
+                <label class="label_class" id="email-label" for="email">*Email:</label>
+                <input id="email" class="input_text" type="email" placeholder="Enter your Email" required>
+                <br>
+
+
+                <label class="label_class" id="number-label" for="number">*Age:</label>
+                <input id="number" class="input_text" type="number" min="0" max="100" placeholder="Age">
+                <br>
+                <p></p>
+            </div>
+            <div>
+                <p class="label_class">Do you live in United State, land of muscle cars?</p>
+                <div class="input_radio">
+                    <input id="yes" type="radio" name="yes-no">
+                    <label id="yes-label" for="yes" class="yes-no-labels">Yes</label>
+                    <br>
+                    <input id="no" type="radio" name="yes-no">
+                    <label id="no-label" for="no">No</label>
+                </div>
+            </div>
+            <div>
+                <p class="label_class">How much you like?</p>
+                <select id="dropdown">
+                    <option value="volvo">I love them</option>
+                    <option value="volvo">I kind of like them</option>
+                    <option value="saab">Are just cars</option>
+                    <option value="mercedes">No big fan</option>
+                    <option value="audi">I hate them</option>
+                </select>
+            </div>
+            <br>
+            <br>
+            <p>
+                Which of them you like:
+            </p>
+            <div id="Cars_list">
+                <p></p>
+                <div id="div_cars_1">
+                    <label for="Chevy Impala 1971">
+                        <input class="cars_checkbox" type="checkbox" name="cars_model" value="Chevy Impala 1971"> Chevy Impala 1971
+                    </label>
+                    <br>
+                    <label for="Plymouth Barracuda 1970">
+                        <input class="cars_checkbox" type="checkbox" name="cars_model" value="Plymouth Barracuda 1970"> Plymouth Barracuda 1970
+                    </label>
+                    <br>
+                    <label for="Ford mustang 1967">
+                        <input class="cars_checkbox" type="checkbox" name="cars_model" value="Ford mustang 1967"> Ford mustang 1967
+                    </label>
+                    <br>
+                    <label for="Chevy Camaro 1969">
+                        <input class="cars_checkbox" type="checkbox" name="cars_model" value="Chevy Camaro 1969"> Chevy Camaro 1969
+                    </label>
+                    <br>
+                    <label for="Chevy Chevelle ss 1970">
+                        <input class="cars_checkbox" type="checkbox" name="cars_model" value="Chevy Chevelle ss 1970"> Chevy Chevelle ss 1970
+                    </label>
+                </div>
+                <div id="div_cars_2">
+                    <label for="Dodge Charger 1970">
+                        <input class="cars_checkbox" type="checkbox" name="cars_model" value="Dodge Charger 1970"> Dodge Charger 1970
+                    </label>
+                    <br>
+                    <label for="Dodge Challenger 1971">
+                        <input class="cars_checkbox" type="checkbox" name="cars_model" value="Dodge Challenger 1971"> Dodge Challenger 1971
+                    </label>
+                    <br>
+                    <label for="Pontiac GTO 1966">
+                        <input class="cars_checkbox" type="checkbox" name="cars_model" value="Pontiac GTO 1966"> Pontiac GTO 1966
+                    </label>
+                    <br>
+                    <label for=" Ford Mustang mach 1 1972">
+                        <input class="cars_checkbox" type="checkbox" name="cars_model" value="Ford Mustang mach 1 1972"> Ford Mustang mach 1 1972
+                    </label>
+                    <br>
+                    <label for="Chevy Nova 1970">
+                        <input class="cars_checkbox" type="checkbox" name="cars_model" value="Chevy Nova 1970"> Chevy Nova 1970
+                    </label>
+                </div>
+                <p></p>
+            </div>
+            <div>
+                <p></p>
+                <p class="label_class">Do you know any other no listed?</p>
+                <textarea placeholder="Write others models here...">
+        
+                </textarea>
+            </div>
+            <button class="myButton" id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
